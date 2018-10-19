@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HW6</title>
+
+    <style type="text/css">
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        input, label {
+            display: block;
+        }
+        input {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form</h1>
+
+    <form action="php/project_update.php" method="post">
+        <label>New Project Name:</label>
+        <input type="text" name="project_name">
+        
+        <label>Project Due Date:</label>
+        <input type="date" name="project_due_date">
+        
+        <label>Supervisor Last Name:</label>
+        <input type="text" name="supervisor_lname">
+        
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
