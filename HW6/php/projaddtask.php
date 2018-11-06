@@ -11,24 +11,25 @@
 </head>
 <body>
 
-	<p>Hi you have successfully input the project named: <?php print( "$project_name" ); ?></p>
-	<p>Additional information can be found in the table below.</p>
+	<p>Results of adding an employee</p>
 
   <table width="800">
     <tr>
       <th>New Project Name</th>
-      <th>Project ID Number</th>
-      <th>Project Due Date</th>
-      <th>Supervisor ID Number</th>
+      <th>Employee First Name</th>
+      <th>Employee Last Name</th>
+      <th>Employee Title</th>
+      <th>Employee Department Name</th>
     </tr>
 
 		<tr>
 			<?php
 	      print("
           <td>$project_name</td>
-          <td>$project_id</td>
-          <td>$project_due_date</td>
-          <td>$supervisor_id</td>
+          <td>$empfname</td>
+          <td>$emplname</td>
+          <td>$emptitle</td>
+          <td>$empdepname</td>
 	      ");
 		  ?>
 		</tr>

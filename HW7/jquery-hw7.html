@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+  <title>Example of using JQuery to Create Dropdown</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(init);
+    function init() {
+      // before doing anything else, get the names of all the pets from the database
+      $('#Employee_lname').load("getemployeenames.php");
+    }
+
+    function showemployeeinfo () {
+      // print out info from database about that pet
+      employeechoice = $('#employeename').val();
+      $('#results').load("getemployeeinfo.php", {'Employee_lname' : employeechoice});
+    }
+</script>
+</head>
+
+<body>
+  <h1>I keep a database of employees.</h1>
+  Select an employee last name to get information.
+
+  <!-- Use AJAX to populate selection -->
+  <form action = "">
+    <fieldset>
+      <label>Employee Last Name</label>
+      <select id="Employee_lname"
+      onmouseout = "showemployeeinfo()"
+      onchange = "showemployeeinfo()">
+    </select>
+
+    <div id="results">
+    </div>
+  </fieldset>
+</form>
+</body>
+</html>

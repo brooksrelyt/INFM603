@@ -34,8 +34,8 @@
 		
 		print("<option>Add New</option>");
 		print("</select><br><br>");
-		print("Employee last name:<input type='text' name='emplname'><br>");
 		print("Employee first name:<input type='text' name='empfname'><br>");
+		print("Employee last name:<input type='text' name='emplname'><br>");
 		print("Employee title:<input type='text' name='emptitle'><br>");
 		print("Employee department name:<input type='text' name='empdepname'><br>");
 		print("<input type='submit' value='Submit'>");
@@ -44,9 +44,9 @@
 		"( Project_name, Employee_fname, Employee_lname, Employee_title ) " .
 		"VALUES ( '$project_name','$emplname','$empfname','$emptitle','$empdepname' )" ;
 
-		if ( !( $result = $database->query ( $query ))) {
-			die ( "Could not execute query! " . $database->connect_error );
-		}
+		// if ( !( $result = $database->query ( $query ))) {
+		// 	die ( "Could not execute query! " . $database->connect_error );
+		// }
 
 
 
