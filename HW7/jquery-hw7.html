@@ -14,7 +14,7 @@
 
     function showemployeeinfo () {
       // print out info from database about that pet
-      employeechoice = $('#employeename').val();
+      employeechoice = $('#Employee_lname').val();
       $('#results').load("getemployeeinfo.php", {'Employee_lname' : employeechoice});
     }
 </script>
